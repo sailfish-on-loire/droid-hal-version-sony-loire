@@ -1,4 +1,4 @@
-%define rpm_vendor qualcomm
+%define rpm_vendor sony
 
 %define vendor_pretty Sony
 
@@ -13,8 +13,8 @@ BuildRequires: droid-config-%{rpm_device}-preinit-plugin
 BuildRequires: droid-config-%{rpm_device}-pulseaudio-settings
 BuildRequires: droid-config-%{rpm_device}-sailfish
 # Shared between the adaptations
-BuildRequires: droid-hal-mermaid
-BuildRequires: droid-hal-mermaid-img-boot
-BuildRequires: droid-hal-mermaid-img-recovery
-BuildRequires: droid-hal-mermaid-kernel
-BuildRequires: droid-hal-mermaid-tools
+BuildRequires: droid-hal-%{device}
+BuildRequires: droid-hal-%{device}-img-boot
+BuildRequires: droid-hal-%{device}-img-recovery
+BuildRequires: droid-hal-%{device}-kernel
+BuildRequires: droid-hal-%{device}-tools
